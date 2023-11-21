@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>PETSLIVE</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,500|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <img src="static/img/petslive.PNG" th:src="@{/img/petslive.PNG}"/>
+            <span>
+              PETSLIVE
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" th:href="@{/home}" > Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" th:href="@{/service}" > Servicios </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" th:href="@{/clinica}" > Clinica</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" th:href="@{/login}" target="_blank">Perfil</a>
+                </li>
+              </ul>
+            </div>
+            <div class="quote_btn-container  d-flex justify-content-center">
+              <a>
+               <button id="cambiarColorBtn" class="boton-cambiar-color">Modo oscuro</button>
+              <!-- Resto de tu contenido -->
+              <script src="bootstrap.js"></script> <!-- Enlaza tu archivo de scripts -->
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section position-relative">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 offset-md-2">
+                  <div class="slider_detail-box">
+                    <h1>
+                      Profesionales
+                      <span>
+                        Al cuidado de tu mascota
+                      </span>
+                    </h1>
+                    <p>
+                      PETSLIVE tiene como objetivo el cuidado y belleza de su mascota, aquí encontrara varios servicios donde puede elegir el que prefiera y necesite su mascota.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="slider_img-box">
+                    <img src="static/img/slider-img.png" th:src="@{/img/slider-img.png}"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 offset-md-2">
+                  <div class="slider_detail-box">
+                    <h1>
+                      Servicios
+                      <span>
+                        Al cuidado de tu mascota
+                      </span>
+                    </h1>
+                    <p>
+                      Tenemos varios servicios de limpieza y cuidado de mascotas, ve y elije el que te interese y el que necesite tu mascota.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="slider_img-box">
+                    <img src="static/img/slider-img.png" th:src="@{/img/slider-img.png}"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 offset-md-2">
+                  <div class="slider_detail-box">
+                    <h1>
+                      Clinica
+                      <span>
+                        Al cuidado de tu mascota
+                      </span>
+                    </h1>
+                    <p>
+                      Aquí podras encontrar informacion por si tu mascota necesita cuidado medico además allí puedes buscarnos y contactarnos virtualmente como nuestro puntos fisicos.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="slider_img-box">
+                    <img src="static/img/slider-img.png" th:src="@{/img/slider-img.png}"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4 offset-md-2">
+                  <div class="slider_detail-box">
+                    <h1>
+                      Perfil
+                      <span>
+                        Al cuidado de tu mascota
+                      </span>
+                    </h1>
+                    <p>
+                      En este apartado podras crear un perfil como dueño de la mascota para tener un tipo de identificacion y ademas llevar el registro de algunos servicios que haya tenido tu mascota.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="slider_img-box">
+                    <img src="static/img/slider-img.png" th:src="@{/img/slider-img.png}"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img-box">
+                    <img src="static/img/about.png" th:src="@{/img/about.png}"/>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <h2 class="custom_heading">
+            
+              <span>
+                 ¿Quienes somos?
+              </span>
+            </h2>
+            <p>
+              Nosotros somos una empresa dedica y que tiene como obejtivo ayudar a las mascotas de los dueños en temas de salud y embellecimiento,tenemos profesionales todos los servicios que ofrecemos,además tenemos un apartado para las personas interesadas en adoptar y hacer feliz a una mascota que quiere un hogar. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+<script type="text/javascript" src="static/java/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="static/java/bootstrap.js"></script>
+</body>
+
+</html>
